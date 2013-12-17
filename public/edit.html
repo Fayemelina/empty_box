@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test form page</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/client.js"></script>
+	</head>
+	<body>
+		<h1>Hello there</h1>
+		<form id="jobadd">
+	<!--<form action="/added" method="post">-->	
+			<label for="title">Job title:</label>
+			<input type="text" name="title"/>
+			<br />
+			<label for="location">Location:</label>
+			<input type="text" name="location" />
+			<br />
+			<label for="description">Job Description:</label>
+			<textarea rows="5" cols="20" type="text" name="description"></textarea>
+			<br />
+			<label for="keyskills">Key Skills:</label>
+			<textarea rows="10" cols="20" type="text" name="keyskills"></textarea>
+			<br />
+			<label for="payfrom">Pay Range:</label>
+			<input type="text" name="payfrom" /> to <input type="text" name="payto" />
+			<br />
+			<label for="closing">Closing Date:</label>
+			<input type="date" name="closing" />
+		<!--<input type="submit" value="Submit">-->
+		</form>
+		<button id="clear" type="button">Clear Form</button>
+		<button id="sendJob" type="button">Submit</button>
+		<a href="/">Back</a>
+	</body>
+</html>
